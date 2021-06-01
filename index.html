@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var password
+		var pass="goa-wedding-2022"
+		function myFunction(){
+		password=document.getElementById("password").value;
+		var pass3=password.toLowerCase();
+		if(pass3==pass){
+			window.location=("michelle&rajiv.html");
+		}else{
+			alert("Oops!... Enter the Correct Password ");
+			window.location=("index.html");
+		}}
+	</script>
+	<meta charset="UTF-8">
+  	<meta name="description" content="M&R">
+  	<meta name="keywords" content="HTML, CSS, JavaScript">
+  	<meta name="author" content="Vivek Sharma V">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>M & R</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background-color: #2e9464;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		.passwd{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20%;
+			vertical-align: center;
+			padding-top: 50px;
+
+		}
+		input{
+			margin-top: 0px;
+			border: none;
+			border-radius: 2px;
+			padding: 10px;
+			width: 100%;
+			background-color: white;
+			text-align: center;
+		}
+		input:focus::placeholder {
+  color: transparent;
+  border: none;
+}
+		button{
+			margin-top: 20px;
+			width: 100%;
+			color: black;
+			padding: 10px;
+			border: none;
+			border-radius: 2px;
+			font-weight: 900;
+		}
+		button:hover{
+			background-color:#FFD800;
+			color: black;
+		}
+		p{
+			font-size: 21px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 15%;
+		}
+		@media only screen and (max-width: 768px){
+			.passwd{
+				width: 30%;
+			}
+			
+		}
+		@media only screen and (max-width: 425px){
+			.passwd{
+				width: 80%;
+			}
+			.img-responsive{
+				    margin-left: auto;
+    display: block;
+    max-width: 65%;
+    height: auto;
+    margin-right: auto;
+			}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="passwd">
+				<img src="images/logo.svg" class="img-responsive">
+				<p>Enter The Password</p>
+				<input type="text" name="password" id="password" value="" placeholder="Password" />
+				<button type="submit" onclick="myFunction()">SUBMIT</button>
+		</div>
+		</div>
+	</div>
+
+</body>
+</html>
